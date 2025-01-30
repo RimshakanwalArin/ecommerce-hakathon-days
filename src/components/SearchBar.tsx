@@ -5,6 +5,7 @@ import { setSearchQuery, setSearchResults } from '../app/(addtocartfun)/Redux/fe
 import { RootState } from '../app/(addtocartfun)/Redux/store';
 import Products from '@/app/utils/Mock';
 import { Product } from '../product/types'
+import Image from 'next/image';
 
 
 
@@ -43,7 +44,7 @@ const SearchBar: React.FC = () => {
       <ul>
         {results.map((product) => (
           <li key={product.id}>
-            <img src={product.image[0]} alt={product.title} width="50" />
+            <Image src={product.image[0]} alt={product.title} width={50} height={50} />
             <span>{product.title}</span>
             <span>${product.price}</span>
           </li>
