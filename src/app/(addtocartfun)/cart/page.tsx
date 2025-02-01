@@ -67,7 +67,7 @@ function Cart() {
                                </div>
                              </div>
                              <button className="w-full mt-4 bg-black text-white py-2 rounded-md">
-                              <Link href={'/chackout'} >
+                              <Link href={'/checkout'} >
                               
                               
                                Go to Checkout
