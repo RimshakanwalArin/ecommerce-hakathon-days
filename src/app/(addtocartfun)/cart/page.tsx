@@ -73,7 +73,12 @@ function Cart() {
                                Go to Checkout
                               </Link>
                              </button>
+                             <Link
+                          href={'/tracking'}
+                          className='mt-8
+                          '>Tracking</Link>
                          </div>
+                         
         
       </div>
   )

@@ -4,7 +4,8 @@ import React from 'react'
 import Brands from './brands/page'
 import ProductSanity from '@/components/ProductSanity'
 import CategoiesSanity from '@/components/CategoriesSanity'
-import Product from './(addtocartfun)/product/page'
+import Product from './(addtocartfun)/product/page' 
+import Link from 'next/link'
 
 
 const Home = () => {
@@ -14,8 +15,11 @@ const Home = () => {
       <FontShowcase/>
       <Brands/>
       <Product/>
-      <ProductSanity/>
-      <CategoiesSanity/>
+      <p className='text-center m-8 font-bold text-green-300'>
+        <Link href={'/two'}>Next Page</Link>
+      </p>
+      {/* <ProductSanity/>
+      <CategoiesSanity/> */}
     </div>
   )
 }

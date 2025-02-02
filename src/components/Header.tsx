@@ -35,7 +35,7 @@ export default function Header() {
                     <Link href={"/brands"}>Brands</Link>
                     <Link href={"/about"}>About</Link>
                     <Link href={"/contact"}>contact</Link>
-                    <Link href={"/products"}>Sanity</Link>
+                    <Link href={"/ProductSanity"}>Sanity</Link>
                 </li>
             </ul>
             
@@ -69,10 +69,10 @@ export default function Header() {
             </div>
             <div className="flex items-center justify-center space-x-5 lg:hidden">
             <Link href={"/cart"} className="relative"><IoCartOutline className="text-4xl  "/>
-            {/* {cart.length > 0 && (
+            {cart.length > 0 && (
                 <span className="absolute top-[-5px] bg-red-400  rounded-full text-white w-[20px] h-[20px] flex justify-center items-center p-1 text-sm right-0">{cart.length}</span>
              )
-             } */}
+             }
             </Link>   
             <SheetSide/>
 

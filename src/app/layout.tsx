@@ -36,7 +36,7 @@ export default function RootLayout({
             <div className="auth-container flex gap-4 p-4">
               <SignedOut>
                 <SignInButton mode="modal" />
-                <SignUpButton mode="modal" /> {/* ✅ Sign Up Button Added */}
+                <SignUpButton mode="modal" /> ✅ Sign Up Button Added
               </SignedOut>
               <SignedIn>
                 <UserButton />
@@ -50,6 +50,6 @@ export default function RootLayout({
           </Providers>
         </body>
       </html>
-    </ClerkProvider>
+     </ClerkProvider>
   );
 }
