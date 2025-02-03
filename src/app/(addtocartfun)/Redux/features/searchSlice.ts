@@ -1,9 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Product } from '../../../../product/types'
-
+import { Product } from '@/app/product/types';
 interface SearchState {
   query: string;
-  results: Product[]; // Use the Product type here
+  results: Product[];
 }
 
 const initialState: SearchState = {
