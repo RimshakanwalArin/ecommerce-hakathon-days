@@ -11,7 +11,7 @@ export default function Brands(){
             <div className="w-[90%] md:w-[80%] bg-[#F0F0F0] p-3 md:p-0 rounded-[20px] ">
                 
                 <div className="flex justify-center  items-center">
-                    <h1 className="text-black text-2xl md:text-4xl  font-extrabold pt-4">BROWSE BY DRESS STYLE</h1> 
+                    <h1 className="text-black text-2xl md:text-4xl  font-extrabold pt-4">BROWSE BY PERFUME BOTTLE STYLE</h1> 
                 </div>
                {/* boxes container */}
                <Link href={"/products"}>

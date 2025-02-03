@@ -5,7 +5,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="relative mt-32 bg-gray-900 text-white/75">
+    <div className="relative mt-3 bg-gray-900 text-white/75">
       <div
         className="absolute inset-0  bg-cover bg-center"
         style={{ backgroundImage: 'url(/perfume2.png)' }}
@@ -18,12 +18,12 @@ const Hero = () => {
           We are dedicated to delivering top-quality products and services to meet your needs.
         </p>
         <div className="mt-10">
-          {/* <Link
-            href="#"
-            className="inline-block px-6 py-3 text-lg font-semibold text-gray-900 bg-indigo-600 rounded-md hover:bg-indigo-700"
+          <Link
+            href="/"
+            className="inline-block px-6 py-3 text-lg font-semibold text-white  rounded-full  bg-pink-300 hover:bg-pink-400"
           >
-            Learn More
-          </Link> */}
+            Product
+          </Link>
         </div>
       </div>
     </div>

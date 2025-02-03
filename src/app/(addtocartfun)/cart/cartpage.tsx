@@ -19,7 +19,7 @@ function Cartpage() {
                 <div key={i} className="flex  lg:w-[650px] p-4 rounded-[16px] border  justify-between">
                     <div className="flex">
                     <Image src={items.image[0]} alt={items.title} width={100} height={100} ></Image>
-                    <div className="flex flex-col ml-3">
+                    <div className="flex flex-col ml-3 text-black">
                         <span>Size:{items.size[0]}</span>
                         <span>Color:{items.color[0]}</span>
                         {/* <span>${items.price}</span> */}

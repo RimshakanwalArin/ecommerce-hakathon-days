@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
+import SearchBar from "./SearchBar";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
         {/* Top Section */}
         <div className="w-full md:w-[40%] mt-5">
           {/* <h1 className="text-2xl md:text-3xl font-extrabold">Suaid</h1> */}
-           <Image src={'/suad.png'} alt="suad logo" width={150} height={150} 
+           <Image src={'/suaad-logo.png'} alt="suad logo" width={150} height={150} 
                      className="text-2xl md:text-4xl font-extrabold pl-2"/>
           <p className="mt-2 text-sm">
             We have perfume bottles your style and which you&apos;re proud to wear. From women to men.
@@ -42,9 +43,11 @@ export default function Footer() {
               <li><Link href="/Privacy-Policy">Privacy Policy</Link></li>
             </ul>
           </div>
-         
+         <div>
+         </div>
         </div>
       </div>
+         <SearchBar/>
       <p className="text-xs mt-3 md:text-sm text-gray-600">
         Suad.co © {new Date().getFullYear()} Made by Rimsha Kanwal Arain, All Rights Reserved
       </p>

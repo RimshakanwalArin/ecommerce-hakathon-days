@@ -14,6 +14,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import SearchBar from "./SearchBar";
+import { IoIosSearch } from "react-icons/io";
 
 
 
@@ -39,8 +41,13 @@ export function SheetSide() {
                    <Link href={`/`}>Home</Link>
                     <Link href={"/product"}>Products</Link>
                     <Link href={"/brands"}>Brands</Link>
-                    <Link href={"/products"}>Sanity</Link>
+                    <Link href={"/about"}>About</Link>
+                    <Link href={"/contact"}>contact</Link>
                 </li>
+                 <div className="flex justify-start items-center lg:bg-[#F0F0F0] lg:w-[300px] h-[40px] pl-2 ml-12 md:ml-0 hover:border-none rounded-full "> <IoIosSearch className="text-xl hidden lg:block " /> 
+                                {/* <input   placeholder={`Search for products...`}  className="bg-[#F0F0F0] outline-none  w-full h-full rounded-full ml-2 hidden lg:block"/> */}
+                                <SearchBar/>
+                                </div>
             </ul>
           </SheetContent>
         </Sheet>

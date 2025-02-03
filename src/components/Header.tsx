@@ -9,8 +9,8 @@ import { SheetSide } from "./Humburgur";
 import Image from "next/image";
 
 import { useSelector } from "react-redux";
-import SearchBar from "./SearchBar";
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
+import SearchBar from "./SearchBar";
 
   
 export default function Header() {
@@ -18,12 +18,12 @@ export default function Header() {
     
      
   return (
-     <header className="w-full fixed bg-white z-10 top-0  h-[60px] md:h-[90px] flex justify-between  pr-2 items-center max-w-screen-2xl mx-auto">
+     <header className="w-full fixed bg-white z-10 top-0  h-[60px] md:h-[90px] flex justify-between  pr-2 items-center max-w-screen-2xl mx -auto">
       {/* <SearchBar/> */}
-           <div className="flex justify-center items-center ">
+           <div className="flex justify-center items-center rounded-2xl ">
 
             {/* logo */} 
-           <Image src={'/suad.png'} alt="suad logo" width={150} height={150} 
+           <Image src={'/suaad-logo.png'} alt="suad logo" width={70} height={70} 
            className="text-2xl md:text-4xl font-extrabold pl-2"/>
            
            </div>
@@ -35,7 +35,6 @@ export default function Header() {
                     <Link href={"/brands"}>Brands</Link>
                     <Link href={"/about"}>About</Link>
                     <Link href={"/contact"}>contact</Link>
-                    <Link href={"/ProductSanity"}>Sanity</Link>
                 </li>
             </ul>
             
@@ -43,9 +42,8 @@ export default function Header() {
  
             {/* right */}
             <div className="ml-14 flex justify-center items-center">
-                <div className="flex justify-start items-center lg:bg-[#F0F0F0] lg:w-[300px] h-[40px] pl-2 ml-12 md:ml-0 hover:border-none rounded-full "> <IoIosSearch className="text-xl hidden lg:block " /> 
-                {/* <input   placeholder={`Search for products...`}  className="bg-[#F0F0F0] outline-none  w-full h-full rounded-full ml-2 hidden lg:block"/> */}
-                <SearchBar/>
+                <div >
+                {/* <SearchBar/> */}
                 </div>
             </div>
             <div className="flex space-x-2 sm:space-x-4 ">

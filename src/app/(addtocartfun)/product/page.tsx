@@ -12,6 +12,7 @@ let stars = [<FaStar key={0}/>,<FaStar key={1}/>,<FaStar key={2}/>,<FaStar key={
 
 const Product = () => {
 const products= useSelector((state:any)=>state.product)
+// console.log('abc',products);
 
 
   return (
@@ -46,6 +47,7 @@ const products= useSelector((state:any)=>state.product)
             <div className="text-center mt-4">
               {/* Title */}
               <h1 className="text-lg font-bold md:text-xl">{item.title}</h1>
+              <p className="text-lg text-gray-800 font-medium">${item. description}</p>
 
               {/* Price and Discount */}
               <div className="flex flex-col md:flex-row md:items-center gap-2 mt-2">

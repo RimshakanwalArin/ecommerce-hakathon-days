@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { Minus, Plus } from "lucide-react";
 import Image from "next/image";
-import { title } from "process";
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
@@ -67,6 +66,8 @@ function SlugPage({ params }: { params: { slug: string } }) {
         {/* Title, Price, Discount */}
         <div>
           <h1 className="text-3xl font-bold">{items.title}</h1>
+          
+          <p className="text-xl font-medium text-gray-700"> {items.discrption}</p>
           <p className="text-xl font-medium text-gray-700"> {items.stars}</p>
           <p className="text-xl font-medium text-gray-700">{cartitem.price * cartitem.qty}</p>
          
@@ -76,10 +77,10 @@ function SlugPage({ params }: { params: { slug: string } }) {
               {cartitem.discount >0 && (cartitem.price-(cartitem.price*cartitem.discount)/100)*cartitem.qty}% OFF
             </p>
           )}
+        <p className="text-gray-600">{items.discrption}</p>
         </div>
 
         {/* Description */}
-        <p className="text-gray-600">{items.discrption}</p>
 
         {/* Color Selection */}
         <div>
